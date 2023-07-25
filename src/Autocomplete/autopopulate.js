@@ -57,7 +57,7 @@ const Autopopulate = () => {
                   <Combobox.Option
                     key={i.id}
                     className={({ active }) =>
-                      `relative cursor-default select-none py-4 ${
+                      `relative cursor-pointer select-none py-4 ${
                         active ? "bg-nobleBlack-700" : ""
                       }`
                     }
