@@ -48,11 +48,11 @@ const Autopopulate = () => {
             afterLeave={() => setQuery("")}
           >
             <Combobox.Options className="mt-1 max-h-70 w-full overflow-auto bg-transparent text-base focus:outline-none sm:text-sm">
-              {filtereditems.length === 0 && query !== "" ? (
+              {filtereditems.length === 0 ? (
                 <div className="relative cursor-default select-none py-2 text-[16px] leading-6 font-medium text-nobleBlack-100">
-                  Nothing found.
+                  Nothing found
                 </div>
-              ) : (
+              ) : query == "" ? null : (
                 filtereditems.map((i) => (
                   <Combobox.Option
                     key={i.id}

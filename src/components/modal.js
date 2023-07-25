@@ -10,13 +10,13 @@ const AutopopulateModal = ({ isOpen, setModalOpen }) => {
         <Transition.Child
           as={Fragment}
           enter="ease-out duration-300"
-          enterFrom="opacity-0"
-          enterTo="opacity-100"
+          // enterFrom="opacity-0"
+          // enterTo="opacity-[64]"
           leave="ease-in duration-200"
-          leaveFrom="opacity-100"
-          leaveTo="opacity-0"
+          // leaveFrom="opacity-[64]"
+          // leaveTo="opacity-0"
         >
-          <div className="fixed inset-0 bg-overlay bg-opacity-60 transition-opacity" />
+          <div className="fixed inset-0 bg-overlay bg-opacity-[0.64] transition-opacity" />
         </Transition.Child>
 
         <div className="fixed inset-0 z-10 overflow-y-auto">

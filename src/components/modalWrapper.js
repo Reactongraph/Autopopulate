@@ -7,10 +7,10 @@ const ModalWrapper = () => {
     <>
       <button
         type="button"
-        className="outline-none text-nobleBlack-400"
+        className="outline-none text-[#61DAFA]"
         onClick={() => setModalOpen(true)}
       >
-        Open Autopopulate Modal
+        Click here to open autopopulate modal
       </button>
       <AutopopulateModal isOpen={openModal} setModalOpen={setModalOpen} />
     </>
