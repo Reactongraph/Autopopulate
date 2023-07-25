@@ -10,11 +10,7 @@ const AutopopulateModal = ({ isOpen, setModalOpen }) => {
         <Transition.Child
           as={Fragment}
           enter="ease-out duration-300"
-          // enterFrom="opacity-0"
-          // enterTo="opacity-[64]"
           leave="ease-in duration-200"
-          // leaveFrom="opacity-[64]"
-          // leaveTo="opacity-0"
         >
           <div className="fixed inset-0 bg-overlay bg-opacity-[0.64] transition-opacity" />
         </Transition.Child>
@@ -31,10 +27,10 @@ const AutopopulateModal = ({ isOpen, setModalOpen }) => {
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
               <Dialog.Panel className="relative transform overflow-hidden rounded-[16px] bg-white text-left transition-all sm:my-8 sm:w-full sm:max-w-[911px]">
-                <div className="bg-gray px-10 py-10 sm:pb-24">
+                <div className="bg-gray px-4 sm:px-10 py-10 sm:pb-24">
                   <button
                     type="button"
-                    className="absolute outline-none top-[20px] right-[25px] text-nobleBlack-400"
+                    className="absolute outline-none top-[20px] right-[10px] sm:right-[25px] text-nobleBlack-400"
                     onClick={() => setModalOpen(false)}
                   >
                     <XMarkIcon height={20} width={20} />
